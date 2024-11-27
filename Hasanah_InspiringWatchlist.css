@@ -22,22 +22,22 @@ body{
   
   @keyframes change {
     0% {
-        background-image: url('/UTS/Images/gambarustadz1.JPG');
+        background-image: url('gambarustadz1.JPG');
     }
     20% {
-        background-image: url('/UTS/Images/gambarustadz2.JPG');
+        background-image: url('gambarustadz2.JPG');
     }
     40% {
-        background-image: url('/UTS/Images/gambarustadz3.JPG');
+        background-image: url('gambarustadz3.JPG');
     }
     60% {
-        background-image: url('/UTS/Images/gambarustadz4.JPEG'); 
+        background-image: url('gambarustadz4.JPEG'); 
     }
     80% {
-        background-image: url('/UTS/Images/gambarustadz5.JPG');
+        background-image: url('gambarustadz5.JPG');
     }
     100% {
-        background-image: url('/UTS/Images/gambarustadz1.JPG'); /* Kembali ke gambar awal */
+        background-image: url('gambarustadz1.JPG'); /* Kembali ke gambar awal */
     }
 }
 
