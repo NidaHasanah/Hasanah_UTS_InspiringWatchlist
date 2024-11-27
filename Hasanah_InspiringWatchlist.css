@@ -12,7 +12,7 @@ body{
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: url(/UTS/Images/gambarustadz1.JPEG);
+    background-image: url(gambarustadz1.jpg);
     background-position: center;
     background-size: center; 
     position: relative;
@@ -22,22 +22,22 @@ body{
   
   @keyframes change {
     0% {
-        background-image: url('gambarustadz1.JPG');
+        background-image: url('gambarustadz1.jpg');
     }
     20% {
-        background-image: url('gambarustadz2.JPG');
+        background-image: url('gambarustadz2.jpg');
     }
     40% {
-        background-image: url('gambarustadz3.JPG');
+        background-image: url('gambarustadz3.jpg');
     }
     60% {
-        background-image: url('gambarustadz4.JPEG'); 
+        background-image: url('gambarustadz4.jpeg'); 
     }
     80% {
-        background-image: url('gambarustadz5.JPG');
+        background-image: url('gambarustadz5.jpg');
     }
     100% {
-        background-image: url('gambarustadz1.JPG'); /* Kembali ke gambar awal */
+        background-image: url('gambarustadz1.jpg'); /* Kembali ke gambar awal */
     }
 }
 
