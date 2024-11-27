@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HASANAH</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/x-icon" href="/web_statis/Images/paviconhasanah.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='Hasanah_InspiringWatchlist.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <div class="banner">
+    
+        <div class="navbar">
+            <img class="logo" src="/web_statis/Images/logohasanah.png" alt="Logo">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars" id="menu-icon"></i>
+                <i class="fas fa-times" id="close-icon"></i>
+            </label>
+            <ul>
+                <li class="dropdown">
+                    <a active href="#">Quotes</a>
+                    <div class="dropdown-content">
+                        <a href="#">Best Quotes</a>
+                        <a href="#">Love Quotes</a>
+                        <a href="#">Worship Quotes</a>
+                    </div>
+                </li>
+                <li><a href="#">Hadiths</a></li>
+                <li><a href="#">Inspiring Watchlist</a></li>
+                <li><a href="#" id="nav-login-btn">Login</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    
+        <div class="content">
+            <h1>Explore Spectacle of Meaningful</h1>
+            <a class="button" href="#motivations">Explore</a>
+        </div>
+    </div>
+
+
+ <!-- form login/register -->
+ <div class="wrapper">
+    <span class="icon-close">
+        <ion-icon name="close-outline"></ion-icon>
+    </span>
+
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </span>
+                <input type="email" required placeholder=" ">
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </span>
+                <input type="password" required placeholder=" ">
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+                <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                </span>
+                <input type="text" required placeholder=" ">
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </span>
+                <input type="email" required placeholder=" ">
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </span>
+                <input type="password" required placeholder=" ">
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">I agree to the terms & conditions</label>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login-register">
+                <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+  // Mendapatkan referensi ke elemen-elemen yang diperlukan
+const wrapper = document.querySelector('.wrapper');
+const navLoginBtn = document.querySelector('#nav-login-btn');
+const iconClose = document.querySelector('.icon-close');
+const registerLink = document.querySelector('.register-link');
+const loginLink = document.querySelector('.login-link');
+
+// Event listener untuk tombol login di navigasi
+navLoginBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    wrapper.classList.add('active-popup');
+});
+
+// Event listener untuk link register
+registerLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    wrapper.classList.add('active');
+});
+
+// Event listener untuk link login
+loginLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    wrapper.classList.remove('active');
+    wrapper.classList.add('active-popup');
+});
+
+// Event listener untuk tombol close
+iconClose.addEventListener('click', () => {
+    wrapper.classList.remove('active-popup');
+    wrapper.classList.remove('active');
+});
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<h3 class="text-video">A video filled with inspiring advice on kindness and wisdom for a better life.</h3>
+
+<div class="youtube-container" id="motivations">
+    <table>  <!--UST. MUFTI MENK-->
+        <tr>
+            <td>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/T9oT-oOaTNU" 
+                            allowfullscreen></iframe>
+                </div>
+            </td>
+            <td>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/KrQuMG4NA6A" 
+                            allowfullscreen></iframe>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table>  <!--UST. ADI HIDAYAT-->
+        <tr>
+            <td>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/KimkPix7pFU" 
+                            allowfullscreen></iframe>
+                </div>
+            </td>
+            <td>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/J5ky4ofT-d0" 
+                            allowfullscreen></iframe>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table>  <!--UST. KHALID BASALAMAH-->
+        <tr>
+            <td>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/O-kyBGTPH-4" 
+                            allowfullscreen></iframe>
+                </div>
+            </td>
+            <td>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/7lYw7cQAleg" 
+                            allowfullscreen></iframe>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table>  <!--UST. HILMAN FAUZI-->
+        <tr>
+            <td>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Wd37cKZZfIs" 
+                            allowfullscreen></iframe>
+                </div>
+            </td>
+            <td>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/exrttsyxJlU"
+                            allowfullscreen></iframe>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table>  <!--UST. HANAN ATTAKI-->
+        <tr>
+            <td>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/PSIychdfFVs" 
+                            allowfullscreen></iframe>
+                </div>
+            </td>
+            <td>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/3a630Qn4VJ0"
+                            allowfullscreen></iframe>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="about-container">
+    <img src="/web_statis/Images/logohasanah.png" class="about-image" alt="Logo">
+    <div class="about-text">
+        <h3 id="about">ABOUT US</h3>
+        <p>This website shares Islamic quotes and motivational messages, serving as a source of encouragement and inspiration. 
+            It offers positive values and energy to anyone seeking strength. 
+            Additionally, it functions as a personal reminder for its creator, 
+            bearing the name <i>HASANAH</i>, which is derived from the creator's name.</p>
+    </div>
+    <div class="about-channel">
+        <h4>Join Our Channel</h4>
+        <div class="socialIcons">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+    </div>  
+</div>
+
+<footer>
+<div class="footerBottom">
+    <p>&copy;2024 Designed by <span class="designer">Nida Hasanah</span></p>
+</div>
+</footer>
+
+</body>
+</html>
